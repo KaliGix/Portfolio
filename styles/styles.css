@@ -1,0 +1,148 @@
+/*This is the first project of css. */
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* the root element is the top level element of the document, in this case the html element. */
+/* this is how we define a variable in css. */
+:root{
+    --primary-color: #000;
+    --secondary-color: #F6F6F6; 
+    --terciary-color: #22D4FD;
+    --color-hover:#272727;
+    
+    --montserrat-font: 'Montserrat', sans-serif;
+    --krona-font: 'Krona One', sans-serif;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:var(--primary-color);
+    color: white;
+    box-sizing: border-box;
+    color:#F6F6F6
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header-nav{
+    display: flex;
+    gap: 80px;
+}
+
+.header-nav-link{
+    text-decoration: none;
+    color: #22D4FD;
+    font-family:var(--montserrat-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+strong{
+    color: #22D4FD;
+}
+
+.title-highlight{
+    color: #22D4FD;
+}
+
+/* example of flexbox */
+.container{
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.container-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title{
+    font-family: var(--krona-font);
+    font-size: 2.25rem;
+} 
+
+.description{
+  font-family: var(--montserrat-font);
+  font-size: 1.5rem;
+}
+
+.container-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    flex-direction: column;/*for default flex-direction is row*/
+    align-items: center; /*justify-content: center doesn't work when flex-direction is column*/
+}
+
+.container-link{
+    text-decoration: none;
+    color: #F6F6F6;
+    background-color: var(--primary-color);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 21.5px 0;
+    font-family: var(--montserrat-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 2px solid #22D4FD;
+    display: flex;
+    justify-content: center;
+     gap: 10px;
+}
+
+.container-link:hover{
+   background-color: var(--color-hover);
+}
+
+.container-image{
+    width: 50%;
+}
+
+.container-subtitle{
+    font-family: var(--krona-font);
+    font-size: 1.5rem;
+    font-weight: 400;;
+}
+
+.footer{
+    background-color: var(--terciary-color);
+    font-family: var(--montserrat-font);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 24px;
+    color: var(--primary-color);
+    font-weight: 400;
+    
+}
+
+/* media query is used to make the website responsive. */
+@media (max-width: 1200px){
+
+    .header{
+        padding: 10%;;
+    }
+
+    .header-nav{
+        justify-content: center;
+    }
+    .container{
+        flex-direction: column-reverse; /*this is used to change the direction of the flexbox.  */
+        
+    }
+
+    .container-section{
+        width: auto;
+    }
+    
+}
