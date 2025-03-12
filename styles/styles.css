@@ -148,12 +148,12 @@ strong{
     
 }
 
-@media (width: 414px){
+@media (max-width: 480px){
 
     .container-image{
         width: 100%;
     }
-    
+
     .container-link{
         width: 100%;
     }
