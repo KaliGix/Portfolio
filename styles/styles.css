@@ -149,6 +149,11 @@ strong{
 }
 
 @media (width: 414px){
+
+    .container-image{
+        width: 100%;
+    }
+    
     .container-link{
         width: 100%;
     }
