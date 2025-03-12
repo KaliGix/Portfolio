@@ -147,3 +147,9 @@ strong{
     }
     
 }
+
+@media (width: 480px){
+    .container-link{
+        width: 100%;
+    }
+}
